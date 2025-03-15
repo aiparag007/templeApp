@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import streamlit_authenticator as stauth
+# import streamlit_authenticator as stauth
 import yaml
 from yaml.loader import SafeLoader
 from streamlit_phone_number import st_phone_number
@@ -67,19 +67,19 @@ with contact:
     st.markdown("***Email*** - singhaiparag320@gmail.com")
     st.markdown("***Contact No.*** +91-9584455771")
 
-with open('config.yaml') as file:
-    config = yaml.load(file, Loader=SafeLoader)
-authenticator = stauth.Authenticate(config['credentials'], config['cookie']['name'], config['cookie']['key'], config['cookie']['expiry_days'])
-#### Login
-authenticator.login(location='sidebar', captcha=False, key='login')
-if st.session_state["authentication_status"] == False:
-    st.sidebar.error('Username/password is incorrect')
-elif st.session_state["authentication_status"] == None:
-    st.sidebar.warning('Please enter your username and password')
-elif st.session_state["authentication_status"]:
-    authenticator.logout('Logout', 'sidebar')
-    if st.session_state["username"] == 'admin':
-        st.write(f'Welcome *{st.session_state["name"]}*')
+# with open('config.yaml') as file:
+#     config = yaml.load(file, Loader=SafeLoader)
+# authenticator = stauth.Authenticate(config['credentials'], config['cookie']['name'], config['cookie']['key'], config['cookie']['expiry_days'])
+# #### Login
+# authenticator.login(location='sidebar', captcha=False, key='login')
+# if st.session_state["authentication_status"] == False:
+#     st.sidebar.error('Username/password is incorrect')
+# elif st.session_state["authentication_status"] == None:
+#     st.sidebar.warning('Please enter your username and password')
+# elif st.session_state["authentication_status"]:
+#     authenticator.logout('Logout', 'sidebar')
+#     if st.session_state["username"] == 'admin':
+#         st.write(f'Welcome *{st.session_state["name"]}*')
 
 
 
