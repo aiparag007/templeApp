@@ -61,7 +61,7 @@ with donation:
 
     
 with jinalay:
-    st.image("Images\\Jinalay1.jpg", use_container_width=False, width=1000)
+    st.image("Images/Jinalay1.jpg", use_container_width=False, width=1000)
 with contact:
     st.header("Please contact our custome support for any issue")
     st.markdown("***Email*** - singhaiparag320@gmail.com")
