@@ -1,0 +1,17 @@
+credentials:
+  usernames:
+    admin:
+      email: jainparag710@gmail.com
+      name: Parag Jain
+      password: $2b$12$g2.WVwb71oQT2/aCoXqrk.5lGEGUY9Om/91badTmlTPkxx7yCP6iq # abc
+    manager:
+      email: ai.parag07@gmail.com
+      name: Ashish Jain
+      password: $2b$12$FVphYz82Knxo3j4lufyE8eeQnYKhHh97EKQdB.JZtSAO/VYAtD0U2 # def
+cookie:
+  expiry_days: 30
+  key: testing # Must be string
+  name: test_name
+preauthorized:
+  emails:
+  - singhaiparag320@gmail.com
