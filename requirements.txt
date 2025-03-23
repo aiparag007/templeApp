@@ -1,3 +1,4 @@
 streamlit-phone-number==0.0.9
 pgeocode==0.5.0
 phonenumbers==8.13.54
+streamlit-on-Hover-tabs==1.0.1
