@@ -8,7 +8,7 @@ from streamlit_phone_number import st_phone_number
 import pgeocode
 import phonenumbers
 
-st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
+st.set_page_config(layout="wide", initial_sidebar_state="expanded")
 st.markdown("<style>section[data-testid='stSidebar'] {width: 372px !important;}</style>", unsafe_allow_html=True) #setting width of sidebar
 
 st.markdown(f'<p style="background-color:#C6093B;color:#FFFFFF;font-size:40px;border-radius:2%;text-align: center; margin-top:-50px;margin-left:-75px;margin-right:-75px;"><i><b>Welcome to Aadinath Jain Mandir<b><i></p>', unsafe_allow_html=True)
